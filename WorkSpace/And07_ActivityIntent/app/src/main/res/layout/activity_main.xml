@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:gravity="center"
+        android:text="암시적 인텐트(Implicit Intent)"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center|left"
+            android:text="1: 전화 걸기"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/txt1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="전화번호 입력" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="전화걸기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center|left"
+            android:text="2: 검색 하기"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/txt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="검색어 입력" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="검색"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center|left"
+            android:text="3: 문자하기"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/txt3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="내용 입력" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="전송"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="명시적 인텐트(혼자 해보기)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="1:문자열 전송해보기"
+            android:gravity="center|left"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/txt4"
+            android:layout_weight="1"
+            android:hint="숫자입력"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn4"
+            android:text="전송"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="2:숫자 전송해보기"
+            android:gravity="center|left"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/txt5"
+            android:layout_weight="1"
+            android:hint="숫자입력"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn5"
+            android:text="전송"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="3:위의 문자숫자 묶어서 객체로 전송"
+            android:gravity="center|left"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="전송"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="4:자바코드로 ArrayList 만들고 전송"
+            android:gravity="center|left"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="전송"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
