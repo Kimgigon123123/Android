@@ -131,17 +131,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                drinkdto.add(new DTO("콜라",800));
 
                 Intent intent = new Intent(MainActivity.this,TestActivity.class);
-                ArrayList<DTO> btn7 = new ArrayList<>();
-                btn7.add(new DTO(txt4.getText().toString(),Integer.parseInt(txt5.getText().toString())));
-                intent.putExtra("btn7",btn7);
+//                ArrayList<DTO> btn7 = new ArrayList<>();
+//                btn7.add(new DTO(txt4.getText().toString(),Integer.parseInt(txt5.getText().toString())));
+//                intent.putExtra("btn7",btn7);
+                intent.putExtra("showlist",drinkdto);
+
                 startActivity(intent);
+
+
+
+
 
 
             }
         });
-
 
 
 //        btn1.setOnClickListener(new View.OnClickListener() {
@@ -177,7 +183,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    ArrayList<DTO> drinkdto = new ArrayList<>();
 
+
+
+
+/*
 
     @Override
     protected void onResume() {
@@ -203,5 +214,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d(TAG, "onDestroy: ");
     }
 
-
+*/
 }
