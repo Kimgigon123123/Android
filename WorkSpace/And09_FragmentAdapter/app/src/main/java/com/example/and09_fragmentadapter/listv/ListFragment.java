@@ -30,6 +30,17 @@ public class ListFragment extends Fragment {
         list.add(new ListDTO(R.drawable.img3,"캐릭터3","ㅎㅎ"));
         list.add(new ListDTO(R.drawable.img4,"캐릭터4","ㅋㅋ"));
         list.add(new ListDTO(R.drawable.img5,"캐릭터5","ㅂㅇ"));
+        list.add(new ListDTO(R.drawable.img1,"캐릭터1","ㅎㅇ"));
+        list.add(new ListDTO(R.drawable.img2,"캐릭터2","ㅂㅂ"));
+        list.add(new ListDTO(R.drawable.img3,"캐릭터3","ㅎㅎ"));
+        list.add(new ListDTO(R.drawable.img4,"캐릭터4","ㅋㅋ"));
+        list.add(new ListDTO(R.drawable.img5,"캐릭터5","ㅂㅇ"));
+        list.add(new ListDTO(R.drawable.img1,"캐릭터1","ㅎㅇ"));
+        list.add(new ListDTO(R.drawable.img2,"캐릭터2","ㅂㅂ"));
+        list.add(new ListDTO(R.drawable.img3,"캐릭터3","ㅎㅎ"));
+        list.add(new ListDTO(R.drawable.img4,"캐릭터4","ㅋㅋ"));
+        list.add(new ListDTO(R.drawable.img5,"캐릭터5","ㅂㅇ"));
+
 
 
 

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.and09_fragmentadapter.R;
 
@@ -45,12 +46,32 @@ public class AdapterListView extends BaseAdapter {
 
     //LayoutInflater를 이용해서 칸마다의 아이템을 붙이는 처리를 해줘야함.
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int i, View v, ViewGroup parent) {
 
-        convertView=inflater.inflate(R.layout.item_listview,parent,false);
-        ImageView img_profile = convertView.findViewById(R.id.imgv_profile);
-        img_profile.setImageResource(list.get(position).getImgRes());
+        v=inflater.inflate(R.layout.item_listview,parent,false);
+        ImageView img_profile = v.findViewById(R.id.imgv_profile);
+        img_profile.setImageResource(list.get(i).getImgRes());
+        TextView tv_name = v.findViewById(R.id.tv_name);
+        TextView tv_msg = v.findViewById(R.id.tv_msg);
+        tv_name.setText(list.get(i).getName());
+        tv_msg.setText(list.get(i).getMsg());
 
-        return convertView;
+        return v;
+    }
+
+    // 뷰홀더라는것을 강제한다. (위젯을 한번 찾거나 이미 붙여진칸의 경우에는 처음부터 디자인 작업을 다시하는게 아니라
+    // 이미 붙어진것을 "재활용"한다
+
+    public class ViewHolder{
+        //item_listview에 있는 모든 위젯을 찾아서 넣어둠. (초기화)
+        ImageView imav;
+        TextView tv_name ;
+        View v;
+
+        public ViewHolder(ImageView imav, TextView tv_name, View v) {
+            this.imav = imav;
+            this.tv_name = tv_name;
+            this.v = v;
+        }
     }
 }
