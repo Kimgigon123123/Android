@@ -11,13 +11,15 @@ import android.widget.ListView;
 
 import com.example.and09_fragmentadapter.grid.GridFragment;
 import com.example.and09_fragmentadapter.listv.ListFragment;
+import com.example.and09_fragmentadapter.menupan.MenupanFragment;
 import com.example.and09_fragmentadapter.practice.PracticeFragment;
+
 import com.example.and09_fragmentadapter.recycler.NormalClass;
 import com.example.and09_fragmentadapter.recycler.RecyclerFragment;
 
 public class AdapterActivity extends AppCompatActivity {
     ListView listv;
-    Button btn_list,btn_grid,btn_recyler,btn_practice;
+    Button btn_list,btn_grid,btn_recyler,btn_practice,btn_practice2;
     FragmentManager manager =  getSupportFragmentManager();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +92,13 @@ public class AdapterActivity extends AppCompatActivity {
         }
     });
 
+    btn_practice2=findViewById(R.id.btn_practice2);
+    btn_practice2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            manager.beginTransaction().replace(R.id.container,new MenupanFragment()).commit();
+        }
+    });
 
     new NormalClass().testToast(this,"쓰고싶은거 나는 액티비티");
 

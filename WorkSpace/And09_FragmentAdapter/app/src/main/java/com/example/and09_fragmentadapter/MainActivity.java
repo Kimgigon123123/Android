@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.example.and09_fragmentadapter.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     //FrameLayout과 Button 두개 초기화 시키기.
 
@@ -20,9 +22,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-    FrameLayout container;
-    Button btn_menu1,btn_menu2,btn_adapter;
+//    FrameLayout container;
+//    Button btn_menu1,btn_menu2,btn_adapter;
     FragmentManager manager =  getSupportFragmentManager(); //프래그먼트 매니저의 초기화식.
+    ActivityMainBinding binding;
 
     Intent intent = getIntent();
 
@@ -30,19 +33,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        binding=ActivityMainBinding.inflate(getLayoutInflater());
+
+        setContentView(binding.getRoot());//getRoot==> 디자인xml파일의 최상단의 레이아웃.
         //Fragment를 붙이기 위한 공간, Fragment, FragmentManager 3가지의 요소가 필요하다.
 //        container=findViewById(R.id.container);  <= FragmentManager에서는 객체로 초기화된 위젯이 필요 x , 디자인파일에 있는 id만 명시해주면 됨
-        btn_menu1=findViewById(R.id.btn_menu1);
-        btn_menu2=findViewById(R.id.btn_menu2);
-        btn_adapter=findViewById(R.id.btn_adapter);
+//        btn_menu1=findViewById(R.id.btn_menu1);
+//        btn_menu2=findViewById(R.id.btn_menu2);
+//        btn_adapter=findViewById(R.id.btn_adapter);
 
 
 
 
-        btn_menu1.setOnClickListener(this);
-        btn_menu2.setOnClickListener(this);
-        btn_adapter.setOnClickListener(this);
+        binding.btnMenu1.setOnClickListener(this);
+        binding.btnMenu2.setOnClickListener(this);
+        binding.btnAdapter.setOnClickListener(this);
 
     }
 

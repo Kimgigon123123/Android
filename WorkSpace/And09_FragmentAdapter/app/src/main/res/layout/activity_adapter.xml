@@ -14,6 +14,7 @@
         android:layout_height="wrap_content">
 
         <Button
+
             android:id="@+id/btn_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +36,13 @@
             android:text="연습"/>
 
 
+
     </LinearLayout>
+    <Button
+        android:id="@+id/btn_practice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연습2"/>
     <FrameLayout
         android:background="#9F9F9F"
         android:id="@+id/container"

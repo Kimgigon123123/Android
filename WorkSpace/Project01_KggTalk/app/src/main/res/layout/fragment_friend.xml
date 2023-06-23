@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".friend.FriendFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/banner_img"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/profile1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_weight="99"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="KGG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="상태메세지 올리기"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="99"
+            android:text="내 멀티 프로필"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/baseline_keyboard_control_key_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/profile1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="친구별로 다른 프로필을 설정해보세요!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="99"
+            android:text="생일인 친구"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:src="@drawable/baseline_keyboard_control_key_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/profile1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="친구의 생일을 확인해보세요!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_weight="99"
+            android:text="업데이트한 친구"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/baseline_keyboard_control_key_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_weight="99"
+            android:text="채널"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/baseline_keyboard_control_key_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CFCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+
+            android:text="친구"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_friend_cnt"
+            android:layout_weight="99"
+            android:text=" 친구수"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/baseline_keyboard_control_key_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
