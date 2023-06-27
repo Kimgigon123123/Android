@@ -34,6 +34,8 @@ ActivitySplashBinding binding;
         dialog.setMessage("로딩 중 대기 바랍니다...");
         dialog.setCancelable(false);
         dialog.show();
+       // Intent intent = new Intent(this,MainActivity.class);
+      //  startActivity(intent);
 
         // Thread : Handler
         // 안드로이드의 앱은 메인 프로세스가 진행되면서 모든 처리가 일어남.

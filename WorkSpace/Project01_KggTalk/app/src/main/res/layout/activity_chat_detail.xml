@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_friend"
+    android:background="#6DA3DA"
+
+
+    >
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/imgv_close"
+        android:src="@drawable/ic_close_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/imgv_profile"
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/profile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/into_chating"
+                android:layout_weight="99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/tv_name"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:text="친구1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:background="@drawable/ic_chat"
+                    android:id="@+id/tv_msg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="채팅내용"/>
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:text="오전11시"
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

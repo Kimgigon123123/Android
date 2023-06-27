@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--1.농성동-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="농성동"
+            android:textSize="30dp" />
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="150dp"
+            android:src="@drawable/ic_arrow_down" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/top_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:itemIconTint="@drawable/top_menu_selector"
+            app:itemTextColor="@drawable/top_menu_selector"
+            app:menu="@menu/top_mainact_menu" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5E5F60"
+        />
+
+    <!--2.컨테이너-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/btm_maincat_menu"
+        app:itemIconTint="@drawable/btm_menu_selector"
+        app:itemTextColor="@drawable/btm_menu_selector"/>
+
+
+
+
+</LinearLayout>

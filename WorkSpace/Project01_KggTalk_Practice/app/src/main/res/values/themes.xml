@@ -7,6 +7,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:statusBarColor">@color/main_color</item>
         <item name = "android:windowLightStatusBar">false</item> <!-- 상태표시줄에 대한 설정을 변경 할것인지 아닌지-->
+<!--        <item name = "fontFamily">@font/font_main</item>-->
 
 
     </style>

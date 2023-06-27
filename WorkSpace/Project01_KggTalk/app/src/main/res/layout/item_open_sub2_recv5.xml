@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="5dp">
+<FrameLayout
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+
+        android:scaleType="centerCrop"
+        android:id="@+id/imgv_background"
+        android:src="#AAA8A8"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:alpha="0.8"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:gravity="bottom"
+            >
+
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="제목"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/open2_recv6"
+            android:layout_below="@+id/imgv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
+</androidx.cardview.widget.CardView>

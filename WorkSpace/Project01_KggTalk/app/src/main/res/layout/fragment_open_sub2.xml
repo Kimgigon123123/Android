@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#AFB1B3">
+   <!--1.지금뜨는오픈채팅-->
+   <LinearLayout
+       android:padding="10dp"
+       android:background="@color/white"
+
+       android:layout_width="match_parent"
+       android:layout_height="350dp"
+       android:orientation="vertical"
+       android:layout_marginBottom="10dp">
+
+      <TextView
+         android:layout_weight="1"
+          android:textColor="#000"
+          android:textStyle="bold"
+         android:text="지금 뜨는 오픈채팅 Lite"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_weight="8"
+          android:id="@+id/open2_recv1"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"/>
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+         android:background="#C3C3C3"/>
+
+      <TextView
+          android:layout_weight="1"
+          android:layout_gravity="center"
+         android:text="더보기 >"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+
+   </LinearLayout>
+
+
+   <!--2.광고-->
+   <LinearLayout
+       android:background="@color/white"
+
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:orientation="vertical"
+       android:layout_marginBottom="10dp">
+      <ImageView
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_weight="9"
+         android:src="@drawable/ad"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"/>
+      <LinearLayout
+          android:layout_gravity="left"
+         android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp">
+
+         <TextView
+             android:layout_marginLeft="10dp"
+            android:text="나는 어떤 여성이 잘 어울릴까?"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+         <TextView
+            android:layout_marginLeft="140dp"
+            android:text="알아보기"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <!--3.이게 내 덕질 방식이야-->
+
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:orientation="vertical"
+       android:background="@color/white"
+       android:padding="10dp"
+       android:layout_marginBottom="10dp">
+
+      <TextView
+         android:text="이게 내 덕질 방식이야, 고독한 팬덤방"
+
+          android:layout_weight="1"
+          android:textColor="#000"
+          android:textStyle="bold"
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+         android:layout_weight="9"
+         android:id="@+id/open2_recv2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+
+
+
+
+   </LinearLayout>
+
+    <!--4. 뉴진스 ASAP-->
+     <LinearLayout
+         android:padding="10dp"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="350dp"
+         android:orientation="vertical"
+         android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="뉴진스 'ASAP' Teaser 공개 ㅎㅎ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#C3C3C3"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_weight="8"
+            android:id="@+id/open2_recv3"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#C3C3C3"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="더보기 >"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+     </LinearLayout>
+
+
+      <!--5.행복한 신혼여행-->
+
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:orientation="vertical"
+          android:background="@color/white"
+          android:padding="10dp"
+          android:layout_marginBottom="10dp">
+
+         <TextView
+             android:text="행복한 신혼여행, 어디로 갈까?"
+
+             android:layout_weight="1"
+             android:textColor="#000"
+             android:textStyle="bold"
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_weight="9"
+             android:id="@+id/open2_recv4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+
+
+
+
+      </LinearLayout>
+
+      <!--6. 귀여운 게 잔뜩 -->
+
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="400dp"
+          android:orientation="vertical"
+          android:background="@color/white"
+          android:padding="10dp"
+          android:layout_marginBottom="10dp">
+
+         <TextView
+             android:text="귀여운 게 잔뜩"
+
+             android:layout_weight="1"
+             android:textColor="#000"
+             android:textStyle="bold"
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_weight="9"
+             android:id="@+id/open2_recv5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             >
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+      </LinearLayout>
+
+      <!--7.보글보글, 라면을 먹을 시간 -->
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:orientation="vertical"
+          android:background="@color/white"
+          android:padding="10dp"
+          android:layout_marginBottom="10dp">
+
+         <TextView
+             android:text="보글보글, 라면을 먹을 시간"
+
+             android:layout_weight="1"
+             android:textColor="#000"
+             android:textStyle="bold"
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_weight="9"
+             android:id="@+id/open2_recv7"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+
+      </LinearLayout>
+
+          <!--8.이런 주제 어때요?-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="이런 주제 어때요?"
+
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+          <com.google.android.material.chip.ChipGroup
+              android:layout_weight="8"
+              android:id="@+id/chip_grp"
+              app:singleSelection="true"
+              app:selectionRequired="true"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <!--https://m2.material.io/components/chips/android#choice-chip-->
+              <com.google.android.material.chip.Chip
+                  android:id="@+id/chip_1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="전체"/>
+<!--                  style="@style/Widget.MaterialComponents.Chip.Choice"-->
+
+<!--                  android:checked="true"-->
+<!--                  android:textColor="@color/black"-->
+<!--                  app:chipIconTint="@drawable/chip_opentalk_forecolor"-->
+<!--                  app:chipBackgroundColor="@drawable/chip_opentalk_background"-->
+<!--                  app:chipIcon="@drawable/ic_chip_1"-->
+<!--                  app:chipIconEnabled="true"-->
+<!--                  app:chipMinHeight="40dp"-->
+<!--                  app:iconEndPadding="10dp"-->
+<!--                  app:iconStartPadding="10dp"-->
+<!--                  app:textEndPadding="5dp"-->
+<!--                  app:textStartPadding="5dp" -->
+
+
+              <com.google.android.material.chip.Chip
+                  android:id="@+id/chip_2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="음악추천"/>
+
+              <com.google.android.material.chip.Chip
+                  android:id="@+id/chip_3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="책추천"/>
+
+              <com.google.android.material.chip.Chip
+                  android:id="@+id/chip_4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="자기계발"/>
+
+              <com.google.android.material.chip.Chip
+                  android:id="@+id/chip_5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="러닝"/>
+
+              <com.google.android.material.chip.Chip
+                  android:id="@+id/chip_6"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="햄스터"/>
+
+
+
+          </com.google.android.material.chip.ChipGroup>
+
+
+
+
+</LinearLayout>
+
+       <!--9.네온이 찬란한 도시 음악-->
+       <LinearLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:orientation="vertical"
+           android:background="@color/white"
+           android:padding="10dp"
+           android:layout_marginBottom="10dp">
+
+           <TextView
+               android:text="네온이 찬란한 도시 음악"
+
+               android:layout_weight="1"
+               android:textColor="#000"
+               android:textStyle="bold"
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_weight="9"
+               android:id="@+id/open2_recv8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+       </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
