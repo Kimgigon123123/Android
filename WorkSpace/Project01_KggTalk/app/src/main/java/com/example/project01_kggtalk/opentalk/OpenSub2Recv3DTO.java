@@ -7,14 +7,22 @@ import java.io.Serializable;
 public class OpenSub2Recv3DTO implements Serializable {
 
     private String title,hashtag;
-    private int imgRes,like;
+    private int imgRes,like,views;
 
-
-
-    public OpenSub2Recv3DTO(String title, int imgRes) {
+    public OpenSub2Recv3DTO(String title, String hashtag, int imgRes, int like, int views) {
         this.title = title;
+        this.hashtag = hashtag;
         this.imgRes = imgRes;
+        this.like = like;
+        this.views = views;
+    }
 
+    public void setViews(int views) {
+        this.views = views;
+    }
+
+    public int getViews() {
+        return views;
     }
 
     public void setTitle(String title) {
@@ -49,10 +57,5 @@ public class OpenSub2Recv3DTO implements Serializable {
         return like;
     }
 
-    public OpenSub2Recv3DTO(String title, String hashtag, int imgRes, int like) {
-        this.title = title;
-        this.hashtag = hashtag;
-        this.imgRes = imgRes;
-        this.like = like;
-    }
+
 }

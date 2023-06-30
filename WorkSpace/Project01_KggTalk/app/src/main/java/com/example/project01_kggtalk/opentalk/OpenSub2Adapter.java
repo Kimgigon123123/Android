@@ -1,12 +1,14 @@
 package com.example.project01_kggtalk.opentalk;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.project01_kggtalk.chat.ChatDetailActivity;
 import com.example.project01_kggtalk.databinding.ItemOpenSub2Recv1Binding;
 
 import java.util.ArrayList;
@@ -35,6 +37,15 @@ public class OpenSub2Adapter extends RecyclerView.Adapter<OpenSub2Adapter.ViewHo
 
        h.binding.tvTitle.setText(list.get(i).getTitle());
        h.binding.tvViews.setText(list.get(i).getViews()+"");
+       h.binding.imgvBackground.setImageResource(list.get(i).getImgRes());
+
+      h.binding.lnRecv1.setOnClickListener(v->{
+          Intent intent = new Intent(context, OpenDetailActivity.class);
+          intent.putExtra("dto",list.get(i));
+          context.startActivity(intent);
+      });
+
+
 
     }
 

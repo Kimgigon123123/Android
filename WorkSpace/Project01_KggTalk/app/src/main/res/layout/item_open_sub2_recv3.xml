@@ -16,14 +16,24 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:textSize="18dp"
+            android:textColor="@color/black"
             android:id="@+id/tv_title"
             android:text="제목"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:textSize="13dp"
             android:id="@+id/tv_hashtag"
             android:text="해시태그"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_views"
+            android:textColor="#CFCFCF"
+            android:text="몇명"
+            android:textSize="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -50,15 +60,19 @@
 
 
 
+            <androidx.cardview.widget.CardView
 
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="right|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:paddingRight="5dp"
                     android:paddingLeft="5dp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_marginRight="3dp"
-                    android:layout_gravity="right|bottom"
-                    android:background="#686868"
+                    android:background="#404040"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -70,6 +84,7 @@
                         android:layout_height="15dp"/>
                     <TextView
                         android:id="@+id/tv_like"
+                        android:textColor="@color/white"
                         android:text="좋아요수"
                         android:textSize="10dp"
                         android:layout_width="wrap_content"
@@ -77,6 +92,8 @@
 
 
                 </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
 
 

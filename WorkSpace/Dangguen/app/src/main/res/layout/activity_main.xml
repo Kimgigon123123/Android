@@ -7,49 +7,55 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <!--1.농성동-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="농성동"
-            android:textSize="30dp" />
 
-        <ImageView
+<!--    &lt;!&ndash;1.농성동&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:orientation="horizontal">-->
 
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginRight="150dp"
-            android:src="@drawable/ic_arrow_down" />
+<!--        <TextView-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="농성동"-->
+<!--            android:textSize="30dp" />-->
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/top_navigation"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            app:itemIconTint="@drawable/top_menu_selector"
-            app:itemTextColor="@drawable/top_menu_selector"
-            app:menu="@menu/top_mainact_menu" />
-    </LinearLayout>
+<!--        <ImageView-->
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#5E5F60"
-        />
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginRight="150dp"-->
+<!--            android:src="@drawable/ic_arrow_down" />-->
+
+        <!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--            android:id="@+id/top_navigation"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:itemIconTint="@drawable/top_menu_selector"-->
+        <!--            app:itemTextColor="@drawable/top_menu_selector"-->
+        <!--            app:menu="@menu/top_mainact_menu" />-->
+<!--    </LinearLayout>-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#5E5F60"-->
+<!--        />-->
 
     <!--2.컨테이너-->
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+
+
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

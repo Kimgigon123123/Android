@@ -34,7 +34,10 @@ public class HomeFragment extends Fragment {
         list.add(new HomeDTO(R.drawable.ic_launcher_background,3000,5,10,"컴퓨터 팝니다","농성동","1월2일"));
         list.add(new HomeDTO(R.drawable.ic_launcher_background,3000,5,10,"컴퓨터 팝니다","농성동","1월2일"));
         list.add(new HomeDTO(R.drawable.ic_launcher_background,5000,5,10,"에어팟","월계동","1월2일"));
-
+        list.add(new HomeDTO(R.drawable.ic_launcher_background,5000,5,10,"에어팟","월계동","1월2일"));
+        list.add(new HomeDTO(R.drawable.ic_launcher_background,5000,5,10,"에어팟","월계동","1월2일"));
+        list.add(new HomeDTO(R.drawable.ic_launcher_background,5000,5,10,"에어팟","월계동","1월2일"));
+        list.add(new HomeDTO(R.drawable.ic_launcher_background,5000,5,10,"에어팟","월계동","1월2일"));
         return list;
     }
 }

@@ -13,6 +13,16 @@
         android:theme="@style/Theme.Project01_KggTalk"
         tools:targetApi="31">
         <activity
+            android:name=".opentalk.OpenDetailActivity"
+            android:exported="false"
+            android:label="@string/title_activity_open_detail"
+            android:theme="@style/Theme.Project01_KggTalk" />
+        <activity
+            android:name=".opentalk.OpenChatDetailActivity"
+            android:exported="false"
+            android:label="@string/title_activity_open_chat_detail"
+            android:theme="@style/Theme.Project01_KggTalk" />
+        <activity
             android:name=".chat.ChatDetailActivity"
             android:exported="false" />
         <activity

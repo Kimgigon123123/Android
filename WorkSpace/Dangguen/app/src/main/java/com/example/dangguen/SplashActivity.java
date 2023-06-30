@@ -22,6 +22,8 @@ public class SplashActivity extends AppCompatActivity {
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+         getSupportActionBar().hide();//액션바를 안보이게 처리한다.
+
 
 
 

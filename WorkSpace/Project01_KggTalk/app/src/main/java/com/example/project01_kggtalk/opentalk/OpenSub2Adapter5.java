@@ -62,6 +62,7 @@ public class OpenSub2Adapter5 extends RecyclerView.Adapter<OpenSub2Adapter5.View
 
     public class SubAdapter extends RecyclerView.Adapter<ViewHolder_Sub>{
         ItemOpenSub2Recv6Binding binding;
+        ArrayList<OpenSub2Recv6DTO> list;
         @NonNull
         @Override
         public ViewHolder_Sub onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -71,7 +72,6 @@ public class OpenSub2Adapter5 extends RecyclerView.Adapter<OpenSub2Adapter5.View
 
         @Override
         public void onBindViewHolder(@NonNull ViewHolder_Sub h, int i) {
-
         }
 
         @Override

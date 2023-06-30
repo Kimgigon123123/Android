@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dongne.DongneFragment"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_grp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--https://m2.material.io/components/chips/android#choice-chip-->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성집화"
+           app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            />
+        <!--                  style="@style/Widget.MaterialComponents.Chip.Choice"-->
+
+        <!--                  android:checked="true"-->
+        <!--                  android:textColor="@color/black"-->
+        <!--                  app:chipIconTint="@drawable/chip_opentalk_forecolor"-->
+        <!--                  app:chipBackgroundColor="@drawable/chip_opentalk_background"-->
+        <!--                  app:chipIcon="@drawable/ic_chip_1"-->
+        <!--                  app:chipIconEnabled="true"-->
+        <!--                  app:chipMinHeight="40dp"-->
+        <!--                  app:iconEndPadding="10dp"-->
+        <!--                  app:iconStartPadding="10dp"-->
+        <!--                  app:textEndPadding="5dp"-->
+        <!--                  app:textStartPadding="5dp" -->
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="동네질문"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="동네맛집"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="인기글"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="부동산직거래"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="생활정보"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="취미생활"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/gray_color"
+            app:chipBackgroundColor="@color/white"
+            android:text="일상"/>
+
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+</HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5E5F60"
+        android:layout_marginTop="10dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_dongne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -37,9 +37,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
         h.binding.imgvProductImg.setImageResource(list.get(i).getImgRes());
-        h.binding.tvPrice.setText(list.get(i).getPrice()+"원");
-        h.binding.tvComment.setText(list.get(i).getComment()+"");
-        h.binding.tvFavorite.setText(list.get(i).getFavorite()+"");
+        h.binding.tvPrice.setText(list.get(i).getPrice()+"");
+        h.binding.tvComment.setText(" "+list.get(i).getComment()+"");
+        h.binding.tvFavorite.setText(" "+list.get(i).getFavorite()+"");
         h.binding.tvTitle.setText(list.get(i).getTitle());
         h.binding.tvAddress.setText(list.get(i).getAddress());
         h.binding.tvDate.setText(list.get(i).getDate());

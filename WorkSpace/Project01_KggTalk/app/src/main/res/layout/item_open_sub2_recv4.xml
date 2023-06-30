@@ -6,23 +6,23 @@
     android:layout_height="200dp"
     app:cardCornerRadius="20dp"
     android:layout_margin="5dp">
-<FrameLayout
-    android:layout_width="150dp"
-    android:layout_height="200dp"
-
-    >
-
-
-
-
-    <ImageView
-
-        android:scaleType="centerCrop"
-        android:id="@+id/imgv_background"
-        android:src="#AAA8A8"
+    <FrameLayout
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:alpha="0.8"/>
+        android:background="@drawable/gradient"
+        >
+
+
+
+
+        <ImageView
+
+            android:scaleType="centerCrop"
+            android:id="@+id/imgv_background"
+
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:alpha="0.6"/>
 
         <LinearLayout
             android:layout_marginBottom="10dp"
@@ -34,6 +34,7 @@
 
 
             <TextView
+
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="제목"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
 
             <LinearLayout
@@ -57,9 +58,10 @@
                     android:id="@+id/tv_views"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textColor="#CFCFCF"
                     android:alpha="1"
-                    android:text="조회수" />
+                    android:text="조회수"
+                    android:textSize="12dp"/>
 
                 <TextView
                     android:layout_below="@+id/tv_title"
@@ -67,8 +69,10 @@
                     android:id="@+id/tv_date"
                     android:text="시간"
                     android:alpha="1"
+                    android:textColor="#CFCFCF"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"/>
 
             </LinearLayout>
 
@@ -79,5 +83,5 @@
 
 
 
-</FrameLayout>
+    </FrameLayout>
 </androidx.cardview.widget.CardView>

@@ -2,4 +2,6 @@
     <string name="app_name">Project01_KggTalk</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_open_chat_detail">OpenChatDetailActivity</string>
+    <string name="title_activity_open_detail">OpenDetailActivity</string>
 </resources>

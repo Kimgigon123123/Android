@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".chat.ChatDetailActivity"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_detail_recv"
+        android:layout_weight="90"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+   <com.google.android.material.chip.Chip
+       android:layout_margin="10dp"
+       android:textAlignment="center"
+        android:textColor="@color/white"
+        app:chipBackgroundColor="@color/orange"
+        android:layout_weight="3"
+        android:text="자주 묻는 질문 보기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>

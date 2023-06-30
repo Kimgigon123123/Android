@@ -51,39 +51,40 @@ public class OpenSub2Fragment extends Fragment {
         return binding.getRoot();
     }
 
+
     public ArrayList<OpenSub2Recv1DTO> getList(){
         ArrayList<OpenSub2Recv1DTO> list = new ArrayList<>();
-        list.add(new OpenSub2Recv1DTO("외국가서 놀랐던 순간",4000));
-        list.add(new OpenSub2Recv1DTO("지금 잠이 옵니까",11000));
+        list.add(new OpenSub2Recv1DTO("외국가서 놀랐던 순간",4000,R.drawable.openimg1));
+        list.add(new OpenSub2Recv1DTO("지금 잠이 옵니까",11000,R.drawable.openimg2));
+        list.add(new OpenSub2Recv1DTO("다이어트 공유하기",8618,R.drawable.openimg3));
         return list;
     }
 
     public ArrayList<OpenSub2Recv2DTO> getList2(){
         ArrayList<OpenSub2Recv2DTO> list =new ArrayList<>();
-        list.add(new OpenSub2Recv2DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv2DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv2DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv2DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv2DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv2DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
+        list.add(new OpenSub2Recv2DTO("당신을 기다리는 제페토","방금 대화",30,R.drawable.openimg4));
+        list.add(new OpenSub2Recv2DTO("어이 류세이. 나 좀 그만 꼬셔라","1초전",11,R.drawable.openimg5));
+        list.add(new OpenSub2Recv2DTO("애니 소통방","1분전",19,R.drawable.openimg6));
+        list.add(new OpenSub2Recv2DTO("완주 애니 단톡방","3분전",9,R.drawable.openimg7));
+        list.add(new OpenSub2Recv2DTO("애니 사진 나눔방","1시간전",207,R.drawable.openimg8));
         return  list;
     }
 
     public ArrayList<OpenSub2Recv3DTO> getList3(){
         ArrayList<OpenSub2Recv3DTO> list = new ArrayList<>();
-        list.add(new OpenSub2Recv3DTO("제목1","#해시태그1 #해시태그2",R.drawable.profile3,30));
-        list.add(new OpenSub2Recv3DTO("제목2","#해시태그1 #해시태그2",R.drawable.profile4,50));
+        list.add(new OpenSub2Recv3DTO("뉴진스 버니즈 소통방","#뉴진스 #버니즈 #안고독 #고독 #민지",R.drawable.openimg9,30,8));
+        list.add(new OpenSub2Recv3DTO("안고독한 NEWJEANS","#뉴진스 #민지 #하니 #다니엘 #해린 #혜인",R.drawable.openimg10,50,10));
         return list;
     }
 
     public ArrayList<OpenSub2Recv4DTO> getList4(){
         ArrayList<OpenSub2Recv4DTO> list =new ArrayList<>();
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
+        list.add(new OpenSub2Recv4DTO("디즈니 ost 노래 부르기","1시간전",30,R.drawable.openimg11));
+        list.add(new OpenSub2Recv4DTO("디즈니,픽사,드림웍스 외국..","1일전",24,R.drawable.openimg12));
+        list.add(new OpenSub2Recv4DTO("게임, 영화, 수다방","방금 대화",4,R.drawable.openimg13));
+        list.add(new OpenSub2Recv4DTO("Disney Lovers","3일전",11,R.drawable.openimg14));
+        list.add(new OpenSub2Recv4DTO("영화보러 갈 사람","4일전",2,R.drawable.openimg15));
+
         return  list;
     }
 
@@ -96,12 +97,12 @@ public class OpenSub2Fragment extends Fragment {
 
     public ArrayList<OpenSub2Recv4DTO> getList7(){
         ArrayList<OpenSub2Recv4DTO> list =new ArrayList<>();
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
-        list.add(new OpenSub2Recv4DTO("ㄴㄹㄹ","1월1일",30,R.drawable.profile2));
+        list.add(new OpenSub2Recv4DTO("야근근무현장","방금전",10,R.drawable.openimg16));
+        list.add(new OpenSub2Recv4DTO("교대 근무자 수험생 카톡방","10초전",34,R.drawable.openimg17));
+        list.add(new OpenSub2Recv4DTO("야간 근무 공대","30초전",35,R.drawable.openimg18));
+        list.add(new OpenSub2Recv4DTO("교대근무 테니스 모임","3분전",345,R.drawable.openimg19));
+        list.add(new OpenSub2Recv4DTO("교대 근무자들 떠들어보아여","1시간전",12,R.drawable.openimg20));
+
         return  list;
     }
 

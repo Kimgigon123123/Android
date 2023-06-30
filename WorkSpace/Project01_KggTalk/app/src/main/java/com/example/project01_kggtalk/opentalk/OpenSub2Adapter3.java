@@ -37,6 +37,7 @@ public class OpenSub2Adapter3 extends RecyclerView.Adapter<OpenSub2Adapter3.View
     h.binding.tvTitle.setText(list.get(i).getTitle());
     h.binding.tvHashtag.setText(list.get(i).getHashtag());
     h.binding.tvLike.setText(" "+list.get(i).getLike()+"");
+    h.binding.tvViews.setText(list.get(i).getViews()+"명");
 
 
 

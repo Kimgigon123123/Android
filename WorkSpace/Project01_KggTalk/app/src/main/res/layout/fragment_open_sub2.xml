@@ -21,10 +21,11 @@
        android:layout_marginBottom="10dp">
 
       <TextView
+          android:text="지금 뜨는 오픈채팅 Lite"
+          android:textSize="18dp"
          android:layout_weight="1"
           android:textColor="#000"
           android:textStyle="bold"
-         android:text="지금 뜨는 오픈채팅 Lite"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
       <androidx.recyclerview.widget.RecyclerView
@@ -59,37 +60,64 @@
        android:layout_height="200dp"
        android:orientation="vertical"
        android:layout_marginBottom="10dp">
-      <ImageView
-          android:layout_marginTop="10dp"
-          android:layout_marginBottom="10dp"
-          android:layout_weight="9"
-         android:src="@drawable/ad"
-          android:layout_width="match_parent"
-          android:layout_height="0dp"/>
-      <LinearLayout
-          android:layout_gravity="left"
-         android:orientation="horizontal"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginBottom="10dp">
 
-         <TextView
-             android:layout_marginLeft="10dp"
-            android:text="나는 어떤 여성이 잘 어울릴까?"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"/>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+           android:layout_marginBottom="10dp">
 
-         <TextView
-            android:layout_marginLeft="140dp"
-            android:text="알아보기"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"/>
+       <LinearLayout
 
-      </LinearLayout>
+           android:background="#FFFFFF"
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:orientation="vertical">
+
+
+
+           <ImageView
+               android:scaleType="centerCrop"
+               android:background="#123"
+               android:paddingTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_weight="9"
+               android:src="@drawable/ad"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"/>
+           <LinearLayout
+               android:layout_gravity="left"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp">
+
+               <TextView
+                   android:layout_marginLeft="10dp"
+                   android:text="나는 어떤 여성이 잘 어울릴까?"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:layout_marginLeft="120dp"
+                   android:text="알아보기"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
 
    </LinearLayout>
 
-   <!--3.이게 내 덕질 방식이야-->
+   <!--3.이 중에 내 취향이 하나쯤은 있겠지-->
 
    <LinearLayout
 
@@ -101,12 +129,12 @@
        android:layout_marginBottom="10dp">
 
       <TextView
-         android:text="이게 내 덕질 방식이야, 고독한 팬덤방"
+         android:text="이 중에 내 취향이 하나쯤은 있겠지"
 
+          android:textSize="18dp"
           android:layout_weight="1"
           android:textColor="#000"
           android:textStyle="bold"
-
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
 
@@ -133,10 +161,11 @@
          android:layout_marginBottom="10dp">
 
         <TextView
+            android:text="뉴진스 'ASAP' Teaser 공개 ㅎㅎ"
+            android:textSize="18dp"
             android:layout_weight="1"
             android:textColor="#000"
             android:textStyle="bold"
-            android:text="뉴진스 'ASAP' Teaser 공개 ㅎㅎ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -169,7 +198,7 @@
      </LinearLayout>
 
 
-      <!--5.행복한 신혼여행-->
+      <!--5.꿈과 환상의 3D 애니메이션-->
 
       <LinearLayout
 
@@ -181,12 +210,11 @@
           android:layout_marginBottom="10dp">
 
          <TextView
-             android:text="행복한 신혼여행, 어디로 갈까?"
-
+             android:text="꿈과 환상의 3D 애니메이션"
+             android:textSize="18dp"
              android:layout_weight="1"
              android:textColor="#000"
              android:textStyle="bold"
-
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"/>
 
@@ -216,11 +244,10 @@
 
          <TextView
              android:text="귀여운 게 잔뜩"
-
+             android:textSize="18dp"
              android:layout_weight="1"
              android:textColor="#000"
              android:textStyle="bold"
-
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"/>
 
@@ -239,7 +266,7 @@
 
       </LinearLayout>
 
-      <!--7.보글보글, 라면을 먹을 시간 -->
+      <!--7.야간에도 일은 멈추지 않아 -->
       <LinearLayout
 
           android:layout_width="match_parent"
@@ -250,12 +277,11 @@
           android:layout_marginBottom="10dp">
 
          <TextView
-             android:text="보글보글, 라면을 먹을 시간"
-
+             android:text="야간에도 일은 멈추지 않아"
+             android:textSize="18dp"
              android:layout_weight="1"
              android:textColor="#000"
              android:textStyle="bold"
-
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"/>
 
@@ -282,11 +308,10 @@
 
         <TextView
             android:text="이런 주제 어때요?"
-
+            android:textSize="18dp"
             android:layout_weight="1"
             android:textColor="#000"
             android:textStyle="bold"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
           <com.google.android.material.chip.ChipGroup
@@ -369,11 +394,10 @@
 
            <TextView
                android:text="네온이 찬란한 도시 음악"
-
+               android:textSize="18dp"
                android:layout_weight="1"
                android:textColor="#000"
                android:textStyle="bold"
-
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"/>
 

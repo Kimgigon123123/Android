@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Dangguen"
         tools:targetApi="31">
         <activity
+            android:name=".chat.ChatDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.HomeDetailActivity"
             android:exported="false" />
         <activity
