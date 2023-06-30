@@ -22,32 +22,88 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:layout_marginBottom="5dp"
                 android:scaleType="fitXY"
                 android:id="@+id/imgv_main"
                 android:src="@drawable/chat_img1"
-                android:layout_weight="4"
+                android:layout_weight="3.5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/chat_detail_img4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"
+                    android:text="100세 건강연구"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:text="스포츠마을"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"/>
+
+
+
+            </LinearLayout>
+
             <TextView
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:textColor="@color/black"
-                android:id="@+id/tv_content"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="어쩌구 저쩌구 ㅁㄴㅇㅁㄴㄻㄴㅇㄹㄴㅇㄹ 어쩌구 읽어보세요"
-                android:layout_weight="2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"/>
+                android:textSize="18dp"
+                android:text="무료 독서능력평가 쿠폰asdasdasdasd"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="날짜"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:id="@+id/tv_content"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="어쩌구 저쩌구 ㅁㄴㅇㅁㄴㄻㄴㅇㄹㄴㅇㄹ 어쩌구 읽어보세요"-->
+<!--                android:layout_weight="2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"/>-->
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/btn_button"
-
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:textColor="@color/orange"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:textAlignment="center"
                 android:layout_weight="1.5"
-                android:text="첫 사용 가이드 보기"
-                android:background="@color/orange"
+                app:chipIcon="@drawable/baseline_person_24"
+                android:text="쿠폰 받기"
+                app:chipBackgroundColor="#FDD4C6"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"/>
 
