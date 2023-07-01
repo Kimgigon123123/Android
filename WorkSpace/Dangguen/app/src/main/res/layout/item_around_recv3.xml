@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:gravity="center|top"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+
+
+
+
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/imgv_main"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/chat_img1" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_brand"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="현대"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="자동차 이름"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+
+                    android:text="가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <TextView
+
+
+                    android:textColor="@color/black"
+
+                    android:text="만원"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_views"
+                android:textColor="#2196F3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="2명이 보는 중"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:id="@+id/tv_content"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:text="어쩌구 저쩌구 ㅁㄴㅇㅁㄴㄻㄴㅇㄹㄴㅇㄹ 어쩌구 읽어보세요"-->
+            <!--                android:layout_weight="2"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"/>-->
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
