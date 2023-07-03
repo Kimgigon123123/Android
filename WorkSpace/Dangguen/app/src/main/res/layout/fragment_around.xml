@@ -174,7 +174,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="440dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -193,7 +193,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/around_recv4"
                 android:layout_width="match_parent"
-                android:layout_height="340dp"
+                android:layout_height="380dp"
                 android:layout_weight="8" />
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/recv4_chip_grp"
@@ -318,7 +318,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="510dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -334,11 +334,101 @@
                 android:textColor="@color/black"
                 android:textSize="18dp" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/around_recv6"
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/recv6_chip_grp"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv6_chip1"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:text="미용"
+                    android:checked="true"
+                    app:chipIconEnabled="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@drawable/chip_around_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv6_chip2"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:text="음식점"
+                    android:checked="false"
+                    app:chipIconEnabled="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@drawable/chip_around_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv6_chip3"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:text="건강"
+                    android:checked="false"
+                    app:chipIconEnabled="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@drawable/chip_around_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv6_chip4"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:text="교육"
+                    android:checked="false"
+                    app:chipIconEnabled="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@drawable/chip_around_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv6_chip5"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:text="생활"
+                    android:checked="false"
+                    app:chipIconEnabled="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@drawable/chip_around_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:id="@+id/recv6_chip6"
+                    android:text="전체"
+                    android:checked="false"
+                    app:chipIconEnabled="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@drawable/chip_around_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="340dp"
-                android:layout_weight="8" />
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#C3C3C3" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/around_recv6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -358,7 +448,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="440dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -374,11 +464,63 @@
                 android:textColor="@color/black"
                 android:textSize="18dp" />
 
-            <androidx.recyclerview.widget.RecyclerView
+            <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/around_recv7"
                 android:layout_width="match_parent"
-                android:layout_height="340dp"
+                android:layout_height="380dp"
                 android:layout_weight="8" />
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/recv7_chip_grp"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv7_chip_1"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:chipBackgroundColor="@drawable/chip_around_background"
+                    app:chipIconEnabled="true"
+                    app:chipMinHeight="1dp"
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv7_chip_2"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    app:chipMinHeight="1dp"
+                    app:chipIconEnabled="true"
+                    app:chipBackgroundColor="@drawable/chip_around_background"
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv7_chip_3"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    app:chipIconEnabled="true"
+                    app:chipMinHeight="1dp"
+                    app:chipBackgroundColor="@drawable/chip_around_background"
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/recv7_chip_4"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    app:chipMinHeight="1dp"
+                    app:chipBackgroundColor="@drawable/chip_around_background" />
+
+
+            </com.google.android.material.chip.ChipGroup>
 
             <FrameLayout
                 android:layout_width="match_parent"

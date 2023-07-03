@@ -10,20 +10,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.dangguen.R;
-import com.example.dangguen.databinding.FragmentAroundRecv4Sub1Binding;
+import com.example.dangguen.databinding.FragmentAroundRecv6Sub1Binding;
 
 
-public class AroundRecv4Sub1Fragment extends Fragment {
+public class AroundRecv6Sub1Fragment extends Fragment {
 
-    FragmentAroundRecv4Sub1Binding binding;
+    FragmentAroundRecv6Sub1Binding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentAroundRecv4Sub1Binding.inflate(inflater,container,false);
-        binding.recv4Sub1.setAdapter(new AroundAdapter4Sub1(getContext()));
-        binding.recv4Sub1.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding = FragmentAroundRecv6Sub1Binding.inflate(inflater,container,false);
+        binding.recv6Sub1.setAdapter(new AroundAdpter6Sub1(getContext()));
+        binding.recv6Sub1.setLayoutManager(new LinearLayoutManager(getContext()));
         return binding.getRoot();
-
     }
 }

@@ -6,7 +6,7 @@
     tools:context=".around.AroundRecv4Sub1Fragment">
 
    <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recv4_sub1"
+       android:id="@+id/recv7_sub1"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"/>
 

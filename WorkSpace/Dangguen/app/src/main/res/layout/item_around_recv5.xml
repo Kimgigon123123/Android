@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="180dp"
+    android:gravity="center|top"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/imgv_main"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/chat_img1" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_room"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="오피스텔"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_building"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="세븐일레븐 건물"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+
+            <TextView
+
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="월세 "
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_deposit"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="보증금"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text=" / "
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="월세"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_dong"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="쌍촌동"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <!--            <TextView-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:id="@+id/tv_content"-->
+        <!--                android:layout_marginRight="10dp"-->
+        <!--                android:layout_marginLeft="10dp"-->
+        <!--                android:text="어쩌구 저쩌구 ㅁㄴㅇㅁㄴㄻㄴㅇㄹㄴㅇㄹ 어쩌구 읽어보세요"-->
+        <!--                android:layout_weight="2"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"/>-->
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
