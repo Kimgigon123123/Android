@@ -318,7 +318,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="510dp"
+            android:layout_height="515dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -591,47 +591,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@color/white"
-            android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_marginBottom="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="나의 당근 이야기"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-
-
-
-            </LinearLayout>
-
-
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/around_recv9"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_weight="8" />
-
-
-
-
-
-        </LinearLayout>
+       
 
 
 

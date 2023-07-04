@@ -50,6 +50,9 @@ public class AroundFragment extends Fragment {
         FragmentAdapter adapter3 = new FragmentAdapter(this,getFragmentList3());
         binding.aroundRecv7.setAdapter(adapter3);
 
+        binding.aroundRecv8.setAdapter(new AroundAdapter8(getContext()));
+        binding.aroundRecv8.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+
 
         binding.recv4ChipGrp.setOnCheckedChangeListener(new ChipGroup.OnCheckedChangeListener() {
             @Override
