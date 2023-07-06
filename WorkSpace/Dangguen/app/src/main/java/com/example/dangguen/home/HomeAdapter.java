@@ -47,8 +47,11 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
             Intent intent =  new Intent(context,HomeDetailActivity.class);
             intent.putExtra("dto",list.get(i));
-
             context.startActivity(intent);
+
+//            Intent intent2 = new Intent(context,HomeDetailFragment.class);
+//            intent2.putExtra("dto",list.get(i));
+//            context.startActivity(intent2);
         });
 
 
