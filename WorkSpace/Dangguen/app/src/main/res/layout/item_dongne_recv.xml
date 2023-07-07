@@ -14,6 +14,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/into_dongne"
             android:layout_weight="7"
             android:layout_marginLeft="10dp"
             android:orientation="vertical"
@@ -43,7 +44,7 @@
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
                 android:text="같이 운동하실분"
                 android:textSize="18dp"
 
@@ -53,7 +54,7 @@
             <TextView
                 android:id="@+id/tv_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:text="두분이나 세분 같이 ㄱㄱ"
                 android:textSize="14dp"
                 android:layout_marginBottom="5dp"/>
@@ -109,6 +110,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:scaleType="centerCrop"
                 android:id="@+id/imgv_product_img"
                 android:layout_width="70dp"
                 android:layout_height="70dp"

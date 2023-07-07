@@ -45,6 +45,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         h.binding.tvDate.setText(list.get(i).getDate());
         h.binding.lnHome.setOnClickListener(v -> {
 
+            list.get(i).setViews(list.get(i).getViews()+1);
             Intent intent =  new Intent(context,HomeDetailActivity.class);
             intent.putExtra("dto",list.get(i));
             context.startActivity(intent);

@@ -1,6 +1,7 @@
 package com.example.dangguen.dongne;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.dangguen.chat.ChatDetailActivity;
 import com.example.dangguen.databinding.ItemDongneRecvBinding;
 
 import java.util.ArrayList;
@@ -45,6 +47,12 @@ public class DongneAdapter extends RecyclerView.Adapter<DongneAdapter.ViewHolder
         h.binding.tvLike.setText(" "+list.get(i).getLike()+"");
         h.binding.tvTitle.setText(list.get(i).getTilte());
         h.binding.tvContent.setText(list.get(i).getContent());
+
+        h.binding.intoDongne.setOnClickListener(v->{
+            Intent intent = new Intent(context, DongneDetailActivity.class);
+            intent.putExtra("dto",list.get(i));
+            context.startActivity(intent);
+        });
     }
 
     @Override
