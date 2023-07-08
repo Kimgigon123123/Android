@@ -53,6 +53,7 @@ public class DongneAdapter extends RecyclerView.Adapter<DongneAdapter.ViewHolder
             intent.putExtra("dto",list.get(i));
             context.startActivity(intent);
         });
+
     }
 
     @Override
