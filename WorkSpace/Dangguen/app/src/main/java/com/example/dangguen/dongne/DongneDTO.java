@@ -5,11 +5,11 @@ import java.io.Serializable;
 public class DongneDTO implements Serializable {
 
 
-    private String category,tilte,content,address,date;
-    private int view,like,comment,imgRes;
+    private String category,tilte,content,address,date,nickname;
+    private int view,like,comment,imgRes,imgProfile,favorite;
 
 
-    public DongneDTO(String category, String tilte, String content, String address, String date, int view, int like, int comment, int imgRes) {
+    public DongneDTO(String category, String tilte, String content, String address, String date, int view, int like, int comment, int imgRes,int favorite,int imgProfile,String nickname) {
         this.category = category;
         this.tilte = tilte;
         this.content = content;
@@ -19,6 +19,33 @@ public class DongneDTO implements Serializable {
         this.like = like;
         this.comment = comment;
         this.imgRes = imgRes;
+        this.favorite = favorite;
+        this.imgProfile = imgProfile;
+        this.nickname = nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public void setImgProfile(int imgProfile) {
+        this.imgProfile = imgProfile;
+    }
+
+    public void setFavorite(int favorite) {
+        this.favorite = favorite;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public int getImgProfile() {
+        return imgProfile;
+    }
+
+    public int getFavorite() {
+        return favorite;
     }
 
     public void setCategory(String category) {

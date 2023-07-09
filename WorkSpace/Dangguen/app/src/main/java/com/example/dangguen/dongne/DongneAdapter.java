@@ -48,6 +48,7 @@ public class DongneAdapter extends RecyclerView.Adapter<DongneAdapter.ViewHolder
         h.binding.tvTitle.setText(list.get(i).getTilte());
         h.binding.tvContent.setText(list.get(i).getContent());
 
+
         h.binding.intoDongne.setOnClickListener(v->{
             Intent intent = new Intent(context, DongneDetailActivity.class);
             intent.putExtra("dto",list.get(i));
