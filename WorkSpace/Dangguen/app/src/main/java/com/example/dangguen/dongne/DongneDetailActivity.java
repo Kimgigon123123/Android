@@ -15,6 +15,8 @@ import com.example.dangguen.chat.ChatDetailAdapter;
 import com.example.dangguen.databinding.ActivityDongneDetailBinding;
 import com.example.dangguen.home.HomeDetailFragment;
 
+import java.util.ArrayList;
+
 public class DongneDetailActivity extends AppCompatActivity {
 
     ActivityDongneDetailBinding binding;
@@ -22,6 +24,9 @@ public class DongneDetailActivity extends AppCompatActivity {
     DongneDTO dto;
 
     Context context;
+
+    ArrayList<String> comment = new ArrayList<>();
+    int i =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +43,17 @@ public class DongneDetailActivity extends AppCompatActivity {
         FragmentManager manager = getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.container,new DongneDetailFragment(dto)).commit();
 
+
+
       binding.btnSubmit.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
+              comment.add(binding.edtComment.getText().toString());
+              i++;
+              dto.setComment(dto.getComment()+1);
               FragmentManager manager = getSupportFragmentManager();
-              manager.beginTransaction().replace(R.id.container,new DongneDetailFragment(1)).commit();
+              manager.beginTransaction().replace(R.id.container,new DongneDetailFragment(comment,i,dto)).commit();
+
           }
       });
 

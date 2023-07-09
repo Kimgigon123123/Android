@@ -59,6 +59,13 @@ public class HomeDetailActivity extends AppCompatActivity {
 
 
 
+        if(dto.isLike==false){
+            binding.imgvLike.setImageResource(R.drawable.ic_favorite);
+        }else if(dto.isLike==true){
+            binding.imgvLike.setImageResource(R.drawable.ic_favorite_pink);
+        }
+
+
         binding.imgvLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

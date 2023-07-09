@@ -5,6 +5,11 @@ import java.io.Serializable;
 public class HomeDTO implements Serializable {
 
     private int imgRes,price,comment,favorite,profileImg,views;
+
+
+
+
+
     private String title,address,date,name,content;
 
     boolean isLike =  false;
@@ -89,6 +94,14 @@ public class HomeDTO implements Serializable {
         return title;
     }
 
+    public void setLike(boolean isLike) {
+        this.isLike = isLike;
+    }
+
+    public boolean getIsLike() {
+        return isLike;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -109,5 +122,6 @@ public class HomeDTO implements Serializable {
         this.views=views;
         this.name=name;
         this.content=content;
+
     }
 }

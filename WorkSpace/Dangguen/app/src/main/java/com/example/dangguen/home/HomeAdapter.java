@@ -43,6 +43,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         h.binding.tvTitle.setText(list.get(i).getTitle());
         h.binding.tvAddress.setText(list.get(i).getAddress());
         h.binding.tvDate.setText(list.get(i).getDate());
+
         h.binding.lnHome.setOnClickListener(v -> {
 
             list.get(i).setViews(list.get(i).getViews()+1);
