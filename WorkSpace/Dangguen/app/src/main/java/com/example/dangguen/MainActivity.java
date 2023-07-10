@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
             }else if(item.getItemId()==R.id.btm_tab2){
                 fragment = new DongneFragment();
-                actionBar.setTitle("농성동");
+                actionBar.setTitle("동네생활");
             }
             else if(item.getItemId()==R.id.btm_tab3){
                 fragment = new AroundFragment();
-                actionBar.setTitle("농성동");
+                actionBar.setTitle("내근처");
             }
 
             else if(item.getItemId()==R.id.btm_tab4){

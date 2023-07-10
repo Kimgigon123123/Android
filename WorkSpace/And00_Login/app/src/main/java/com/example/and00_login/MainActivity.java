@@ -16,6 +16,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+    //메소드 => 리턴타입이 있는 메소드를 구현, 호출을 자유롭게 하고 사용하는 이유를 명확히 알고있다.
+    //클래스 => 클래스내부에 있는 멤버의 접근과 각각의 멤버를 구분하고 자유롭게 커스텀할수있다.(변형)
+    //멤버 => 인터페이스의 규칙을 명확히 알고 자유롭게 구현하여 사용할수있다.
+
 
     EditText edt_id,edt_pw;
     Button btn_login;
@@ -34,19 +38,21 @@ public class MainActivity extends AppCompatActivity {
         RetrofitInterface api = rc.getRetrofit().create(RetrofitInterface.class);
         HashMap<String, Object> paramMap = new HashMap<>();
 
+        CommonConn.KggCallBack callBack = new CommonConn.KggCallBack() {
+            @Override
+            public void onResult(boolean isResult, String data) {
+                Log.d("결과", "onResult: "+data);
+            }
+        };
+        Log.d("콜백", "콜백(인터페이스의 메모리)"+callBack);
 
         btn_login.setOnClickListener(v-> {
 
 
-                CommonConn conn = new CommonConn(this,"login");
+                CommonConn conn = new CommonConn(this,"member/login");
                 conn.addParamMap("id",edt_id.getText().toString());
                 conn.addParamMap("pw",edt_pw.getText().toString());
-                conn.onExcute(new CommonConn.KggCallBack() {
-                    @Override
-                    public void onResult(boolean isResult, String data) {
-
-                    }
-                });//onExcute 메소드가 실행되면 일단 Spring으로 전송처리는 정상적으로 작동한다. (결과를 가져오려면 어떻게 해야할까?)
+                conn.onExcute(callBack);//onExcute 메소드가 실행되면 일단 Spring으로 전송처리는 정상적으로 작동한다. (결과를 가져오려면 어떻게 해야할까?)
 
 
 
