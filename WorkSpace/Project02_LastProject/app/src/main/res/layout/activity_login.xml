@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member.LoginActivity"
+    android:orientation="vertical">
+
+    <!--Glide Url을 이용해서 이미지를 붙이는 처리.예정-->
+    <ImageView
+        android:id="@+id/imgv_logo"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:helperTextEnabled="true"
+        app:helperText="30자이내로 입력하세요"
+        app:startIconDrawable="@drawable/ic_launcher_foreground"
+        app:startIconContentDescription="아이디"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#123456"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+      >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="text"
+            android:hint="아이디"
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:helperTextEnabled="true"
+        app:helperText="30자이내로 입력하세요"
+        app:startIconDrawable="@drawable/ic_launcher_foreground"
+        app:startIconContentDescription="아이디"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#123456"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:id="@+id/edt_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:text="로그인 정보 기억하기"
+        android:id="@+id/chk_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        />
+
+    <Button
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="네이버로그인(예정)"
+        />
+
+    <Button
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="카카오로그인(예정)"
+        />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="아직 회원이 아니라면?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_join"
+            android:text="회원가입"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textColor="#3280CD"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
