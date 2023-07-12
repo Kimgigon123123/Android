@@ -2,11 +2,14 @@ package com.example.project02_lastproject.member;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.project02_lastproject.MainActivity;
 import com.example.project02_lastproject.R;
 import com.example.project02_lastproject.common.CommonConn;
+import com.example.project02_lastproject.common.CommonVar;
 import com.example.project02_lastproject.databinding.ActivityLoginBinding;
 import com.google.gson.Gson;
 
@@ -42,7 +45,10 @@ public class LoginActivity extends AppCompatActivity {
                 if(vo==null){
                     Toast.makeText(this, "아이디 또는 비밀번호를 확인하세요", Toast.LENGTH_SHORT).show();
                 }else{
+                    CommonVar.logininfo=vo;
                     Toast.makeText(this, "로그인성공 !!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });
