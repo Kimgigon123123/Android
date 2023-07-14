@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".around.AroundRecv4Sub1Fragment">
+    tools:context=".around.AroundRecv6Sub1Fragment">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recv4_sub1"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv6_sub4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>

@@ -47,10 +47,11 @@ public class AroundFragment extends Fragment {
         FragmentAdapter adapter2 = new FragmentAdapter(this,getFragmentList2());
         binding.aroundRecv6.setAdapter(adapter2);
 
+
         FragmentAdapter adapter3 = new FragmentAdapter(this,getFragmentList3());
         binding.aroundRecv7.setAdapter(adapter3);
 
-        binding.aroundRecv8.setAdapter(new AroundAdapter8(getContext()));
+        binding.aroundRecv8.setAdapter(new AroundAdapter8(getList8(),getContext()));
         binding.aroundRecv8.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
 
 
@@ -196,6 +197,16 @@ public class AroundFragment extends Fragment {
         return list;
     }
 
+    public ArrayList<AroundDTO8> getList8(){
+        ArrayList<AroundDTO8> list = new ArrayList<>();
+        list.add(new AroundDTO8(R.drawable.dongne_img1,1699,70,"현대","현대 그랜저 IG 2.4 GDi FWD 프리미엄 스페셜"));
+        list.add(new AroundDTO8(R.drawable.dongne_img1,4400,130,"BMW","BMW X3 G01 20d xDrive xLine"));
+        list.add(new AroundDTO8(R.drawable.dongne_img1,1050,56,"미니","쿠퍼 D III F56/F55 5DR 1.5d (116마력)"));
+
+
+        return list;
+    }
+
 
     ArrayList<Fragment> getFragmentList(){
         ArrayList<Fragment> list = new ArrayList<>();
@@ -210,11 +221,11 @@ public class AroundFragment extends Fragment {
     ArrayList<Fragment> getFragmentList2(){
         ArrayList<Fragment> list = new ArrayList<>();
         list.add(new AroundRecv6Sub1Fragment());
-        list.add(new AroundRecv6Sub1Fragment());
-        list.add(new AroundRecv6Sub1Fragment());
-        list.add(new AroundRecv6Sub1Fragment());
-        list.add(new AroundRecv6Sub1Fragment());
-        list.add(new AroundRecv6Sub1Fragment());
+        list.add(new AroundRecv6Sub2Fragment());
+        list.add(new AroundRecv6Sub3Fragment());
+        list.add(new AroundRecv6Sub4Fragment());
+        list.add(new AroundRecv6Sub5Fragment());
+        list.add(new AroundRecv6Sub6Fragment());
         return list;
 
     }

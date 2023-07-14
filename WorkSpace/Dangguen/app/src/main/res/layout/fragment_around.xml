@@ -174,7 +174,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="440dp"
+            android:layout_height="500dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -190,10 +190,12 @@
                 android:textColor="@color/black"
                 android:textSize="18dp" />
 
+
+
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/around_recv4"
                 android:layout_width="match_parent"
-                android:layout_height="380dp"
+                android:layout_height="420dp"
                 android:layout_weight="8" />
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/recv4_chip_grp"
@@ -448,7 +450,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="440dp"
+            android:layout_height="500dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="10dp"
@@ -467,7 +469,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/around_recv7"
                 android:layout_width="match_parent"
-                android:layout_height="380dp"
+                android:layout_height="420dp"
                 android:layout_weight="8" />
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/recv7_chip_grp"

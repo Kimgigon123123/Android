@@ -34,24 +34,24 @@
         </androidx.cardview.widget.CardView>
 
 
+
         <TextView
-            android:id="@+id/tv_room"
+            android:id="@+id/tv_brand"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="3dp"
-            android:text="오피스텔"
+            android:text="현대"
             android:textSize="12dp"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="16dp"/>
 
         <TextView
-            android:id="@+id/tv_building"
+            android:id="@+id/tv_name"
             android:textColor="@color/black"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="3dp"
-            android:text="세븐일레븐 건물"
+            android:text="자동차 이름"
             android:layout_width="wrap_content"
             android:layout_height="20dp"/>
 
@@ -64,34 +64,20 @@
             android:layout_height="20dp">
 
             <TextView
-
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:text="월세 "
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
-
-
-            <TextView
-                android:id="@+id/tv_deposit"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:text="보증금"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
-
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:text=" / "
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
-
-            <TextView
                 android:id="@+id/tv_price"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="월세"
+
+
+                android:text="가격"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+            <TextView
+
+
+                android:textColor="@color/black"
+
+                android:text="만원"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
 
@@ -100,17 +86,33 @@
 
         </LinearLayout>
 
-
-        <TextView
-            android:id="@+id/tv_dong"
-
+        <androidx.cardview.widget.CardView
+            android:outlineProvider="none"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="3dp"
-            android:text="쌍촌동"
-            android:textSize="12dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:backgroundTint="#B9E4F8"
+            app:cardCornerRadius="3dp"
             android:layout_width="wrap_content"
-            android:layout_height="16dp"/>
+            android:layout_height="18.5dp">
+            <TextView
+
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+
+                android:id="@+id/tv_views"
+                android:textColor="#2196F3"
+
+                android:text="70만원 절약"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
 
         <!--            <TextView-->
         <!--                android:layout_marginTop="10dp"-->

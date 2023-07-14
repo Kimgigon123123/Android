@@ -18,14 +18,14 @@ public class AroundAdapter8 extends RecyclerView.Adapter<AroundAdapter8.ViewHold
 
 
 
-    public AroundAdapter8( Context context) {
-
-        this.context = context;
-    }
+    ArrayList<AroundDTO8> list;
 
     Context context;
 
-
+    public AroundAdapter8(ArrayList<AroundDTO8> list, Context context) {
+        this.list = list;
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -38,12 +38,17 @@ public class AroundAdapter8 extends RecyclerView.Adapter<AroundAdapter8.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
 
+        h.binding.tvBrand.setText(list.get(i).getTv_brand());
+        h.binding.tvName.setText(list.get(i).getTv_name());
+        h.binding.tvPrice.setText(list.get(i).getTv_price()+"");
+        h.binding.tvViews.setText(list.get(i).getTv_saving()+"만원 절약");
+        h.binding.imgvMain.setImageResource(list.get(i).getImgRes());
 
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

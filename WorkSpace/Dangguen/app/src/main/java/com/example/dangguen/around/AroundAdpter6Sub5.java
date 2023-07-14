@@ -2,25 +2,24 @@ package com.example.dangguen.around;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dangguen.databinding.ItemRecv4Sub1Binding;
-import com.example.dangguen.databinding.ItemRecv6Sub1Binding;
+import com.example.dangguen.databinding.ItemRecv6Sub4Binding;
+import com.example.dangguen.databinding.ItemRecv6Sub5Binding;
 
 import java.util.ArrayList;
 
-public class AroundAdpter6Sub1  extends RecyclerView.Adapter<AroundAdpter6Sub1.ViewHolder> {
+public class AroundAdpter6Sub5 extends RecyclerView.Adapter<AroundAdpter6Sub5.ViewHolder> {
 
-    ItemRecv6Sub1Binding binding;
+    ItemRecv6Sub5Binding binding;
 
-    ArrayList<AroundDTO6Rcv1> list;
+    ArrayList<AroundDTO6Rcv5> list;
     Context context;
 
-    public AroundAdpter6Sub1(ArrayList<AroundDTO6Rcv1> list, Context context) {
+    public AroundAdpter6Sub5(ArrayList<AroundDTO6Rcv5> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -29,7 +28,7 @@ public class AroundAdpter6Sub1  extends RecyclerView.Adapter<AroundAdpter6Sub1.V
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        binding= ItemRecv6Sub1Binding.inflate(inflater,parent,false);
+        binding= ItemRecv6Sub5Binding.inflate(inflater,parent,false);
         return new ViewHolder(binding);
     }
 
@@ -63,9 +62,9 @@ public class AroundAdpter6Sub1  extends RecyclerView.Adapter<AroundAdpter6Sub1.V
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        ItemRecv6Sub1Binding binding;
+        ItemRecv6Sub5Binding binding;
 
-        public ViewHolder(@NonNull ItemRecv6Sub1Binding binding) {
+        public ViewHolder(@NonNull ItemRecv6Sub5Binding binding) {
             super(binding.getRoot());
             this.binding=binding;
         }
