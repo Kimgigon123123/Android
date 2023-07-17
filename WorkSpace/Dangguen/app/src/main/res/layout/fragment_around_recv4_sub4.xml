@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".around.AroundRecv4Sub1Fragment">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recv7_sub1"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv4_sub4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>

@@ -1,5 +1,6 @@
 package com.example.dangguen.around;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.dangguen.R;
 import com.example.dangguen.databinding.FragmentAroundBinding;
@@ -22,11 +24,21 @@ public class AroundFragment extends Fragment {
     FragmentAroundBinding binding;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
+
         binding=FragmentAroundBinding.inflate(inflater,container,false);
+
+        binding.aroundMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "미구현 기능입니다", Toast.LENGTH_SHORT).show();
+            }
+        });
         binding.aroundRecv1.setAdapter(new AroundAdpater1(getList(),getContext()));
         binding.aroundRecv1.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
 
@@ -162,6 +174,8 @@ public class AroundFragment extends Fragment {
         return binding.getRoot();
     }
 
+
+
     public ArrayList<AroundDTO1> getList(){
         ArrayList<AroundDTO1> list = new ArrayList<>();
         list.add(new AroundDTO1(1,10000,"네일자격증 모델구해요~","운암동"));
@@ -190,9 +204,9 @@ public class AroundFragment extends Fragment {
 
     public ArrayList<AroundDTO5> getList5(){
         ArrayList<AroundDTO5> list = new ArrayList<>();
-        list.add(new AroundDTO5(R.drawable.chat_img1,200,50,"원룸","미니스톱 건물","농성동"));
-        list.add(new AroundDTO5(R.drawable.chat_img1,200,30,"원룸","미니스톱 건물","농성동"));
-        list.add(new AroundDTO5(R.drawable.chat_img1,1000,100,"투룸","공원 앞 건물","농성동"));
+        list.add(new AroundDTO5(R.drawable.chat_img1,400,45,"오피스텔","풍암호수공원부근","풍암동"));
+        list.add(new AroundDTO5(R.drawable.chat_img1,300,38,"오피스텔","미니스톱 앞 건물","쌍촌동"));
+        list.add(new AroundDTO5(R.drawable.chat_img1,200,21,"분리형 원룸","버스도보 2분 거리","화정동"));
 
         return list;
     }
@@ -211,9 +225,9 @@ public class AroundFragment extends Fragment {
     ArrayList<Fragment> getFragmentList(){
         ArrayList<Fragment> list = new ArrayList<>();
         list.add(new AroundRecv4Sub1Fragment());
-        list.add(new AroundRecv4Sub1Fragment());
-        list.add(new AroundRecv4Sub1Fragment());
-        list.add(new AroundRecv4Sub1Fragment());
+        list.add(new AroundRecv4Sub2Fragment());
+        list.add(new AroundRecv4Sub3Fragment());
+        list.add(new AroundRecv4Sub4Fragment());
         return list;
 
     }
@@ -233,9 +247,9 @@ public class AroundFragment extends Fragment {
     ArrayList<Fragment> getFragmentList3(){
         ArrayList<Fragment> list = new ArrayList<>();
         list.add(new AroundRecv7Sub1Fragment());
-        list.add(new AroundRecv7Sub1Fragment());
-        list.add(new AroundRecv7Sub1Fragment());
-        list.add(new AroundRecv7Sub1Fragment());
+        list.add(new AroundRecv7Sub2Fragment());
+        list.add(new AroundRecv7Sub3Fragment());
+        list.add(new AroundRecv7Sub4Fragment());
         return list;
 
     }

@@ -32,9 +32,9 @@ public class AroundRecv4Sub1Fragment extends Fragment {
     public ArrayList<AroundDTO4Rcv1> getList() {
 
         ArrayList<AroundDTO4Rcv1> list = new ArrayList<>();
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,10000,372,20,"광양돌판한우","농성동","주방두루치기1명 홀써빙 1명. 모집합니다"));
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,10000,127,10,"박고집한우전문전","화정동","홀 서빙 직원 모집"));
-        list.add(new AroundDTO4Rcv1(0,10000,211,15,"오리궁댕이","금호동","설것지 주방보조 구합니다"));
+        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,9620,175,10,"디아치앤갤러리","농성동","디아치카페에서 평일마감파트타임을 구합니다."));
+        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,11000,329,10,"바른초밥","농성동","바른초밥 농성점(본점)에서 주방사원 구하고"));
+        list.add(new AroundDTO4Rcv1(0,10000,560,10,"포차다모임","농성동","실내포차 주 3~4일 홀직원 구함"));
         return list;
     }
 }
