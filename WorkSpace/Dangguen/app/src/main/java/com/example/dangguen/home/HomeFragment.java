@@ -26,6 +26,12 @@ public class HomeFragment extends Fragment {
        binding=FragmentHomeBinding.inflate(inflater,container,false);
         binding.recvHome.setAdapter(new HomeAdapter(getList(),getContext()));
         binding.recvHome.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        binding.btnWrite.setOnClickListener(v->{
+            WriteDialog dialog = new WriteDialog(getContext());
+            dialog.show();
+        });
+
         return binding.getRoot();
     }
 
