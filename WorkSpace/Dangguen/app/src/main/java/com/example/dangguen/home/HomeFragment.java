@@ -1,5 +1,6 @@
 package com.example.dangguen.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -19,6 +20,9 @@ public class HomeFragment extends Fragment {
 
     FragmentHomeBinding binding;
 
+
+    HomeDTO dto;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -26,6 +30,12 @@ public class HomeFragment extends Fragment {
        binding=FragmentHomeBinding.inflate(inflater,container,false);
         binding.recvHome.setAdapter(new HomeAdapter(getList(),getContext()));
         binding.recvHome.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+
+
+
+
 
         binding.btnWrite.setOnClickListener(v->{
             WriteDialog dialog = new WriteDialog(getContext());
@@ -44,6 +54,7 @@ public class HomeFragment extends Fragment {
         list.add(new HomeDTO(R.drawable.home_img5,330000,0,9,"3돈 반지","화정동","22시간 전",R.drawable.baseline_person_24,1065,"똑순이","낱개로 구매 가능해요 \n순금특성상 잘찌그러지는거 아시죠? \n순금 모으시거나 녹여서 3돈 반지나 금보태시는분들 \n가져가세요 개당32만원 \n오늘날짜로 순금한돈당 34만원 입니다."));
         list.add(new HomeDTO(R.drawable.home_img6,700000,2,3,"디올 클러치","화정 1동","2시간 전",R.drawable.baseline_person_24,210,"하품","구매후 거의 든 적 없이 보관만 했습니다 ㅎㅎ 당연히 모서리 까짐이나 이염 없구요 내부도 꺠끗합니다 거의 새상품급 이예요!!"));
         list.add(new HomeDTO(R.drawable.home_img7,5000,1,5,"오늘비움 팔아요","농성1동","1일 전",R.drawable.baseline_person_24,13,"하하맨"," "));
+
         return list;
     }
 }
