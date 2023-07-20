@@ -30,7 +30,7 @@ public class AroundRecv6Sub1Fragment extends Fragment {
 
     public ArrayList<AroundDTO6Rcv1> getList(){
         ArrayList<AroundDTO6Rcv1> list = new ArrayList<>();
-        list.add(new AroundDTO6Rcv1(R.drawable.dongne_img1,R.drawable.dongne_img1,R.drawable.dongne_img1,
+        list.add(new AroundDTO6Rcv1(R.drawable.around_img6_1_1,R.drawable.around_img6_1_2,R.drawable.around_img6_1_3,
                                     "타임뷰티 속눈썹&왁싱","속눈썹펌/연장","LED연장 런칭~","약 7시간전",
                                                 "디얼제이","속눈썹펌/연장","디얼제이에서 이벤트를 진행하고있어요.","1일전",
                                                 "원트네일", "네일샵", "원트네일 7월3일 정식 오픈","14일전"));

@@ -32,9 +32,9 @@ public class AroundRecv7Sub1Fragment extends Fragment {
     public ArrayList<AroundDTO4Rcv1> getList() {
 
         ArrayList<AroundDTO4Rcv1> list = new ArrayList<>();
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,220,10,"Yoon","필라테스","농성역 1번 출구 300미터 방면 서구청 맞은편쪽 위치한 윤 필라테스입니다."));
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,597,20,"SGYM신세계점","헬스","5성급 호텔의 럭셔리한 인테리어 운동공간 실평수 500평"));
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,866,30,"올어바웃필라테스","필라테스","올바른 움직임이 시작되는 공간 올어바웃 필라테스입니다"));
+        list.add(new AroundDTO4Rcv1(R.drawable.around_img7_1_1,220,10,"Yoon","필라테스","농성역 1번 출구 300미터 방면 서구청 맞은편쪽 위치한 윤 필라테스입니다."));
+        list.add(new AroundDTO4Rcv1(R.drawable.around_img7_1_2,597,20,"SGYM신세계점","헬스","5성급 호텔의 럭셔리한 인테리어 운동공간 실평수 500평"));
+        list.add(new AroundDTO4Rcv1(R.drawable.around_img7_1_3,866,30,"올어바웃필라테스","필라테스","올바른 움직임이 시작되는 공간 올어바웃 필라테스입니다"));
 
         return list;
     }

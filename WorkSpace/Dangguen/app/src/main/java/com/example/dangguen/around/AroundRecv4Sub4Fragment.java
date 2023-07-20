@@ -33,8 +33,8 @@ public class AroundRecv4Sub4Fragment extends Fragment {
     public ArrayList<AroundDTO4Rcv4> getList() {
 
         ArrayList<AroundDTO4Rcv4> list = new ArrayList<>();
-        list.add(new AroundDTO4Rcv4(R.drawable.dongne_img1,13000,601,10,"농성화로","농성동","고깃집 직원 알바 구합니다~"));
-        list.add(new AroundDTO4Rcv4(R.drawable.dongne_img1,15000,617,10,"너구리알탕아구찜","농성동","주방 남직원 구함"));
+        list.add(new AroundDTO4Rcv4(0,13000,601,10,"농성화로","농성동","고깃집 직원 알바 구합니다~"));
+        list.add(new AroundDTO4Rcv4(0,15000,617,10,"너구리알탕아구찜","농성동","주방 남직원 구함"));
         list.add(new AroundDTO4Rcv4(0,9620,211,10,"오리궁댕이","금호동","설것지 주방보조 구합니다"));
         return list;
     }

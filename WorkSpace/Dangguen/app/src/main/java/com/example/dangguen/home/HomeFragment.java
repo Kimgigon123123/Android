@@ -19,23 +19,18 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     FragmentHomeBinding binding;
-
+    static HomeAdapter homeAdapter;
 
     HomeDTO dto;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        homeAdapter = new HomeAdapter(getList(),getContext());
 
        binding=FragmentHomeBinding.inflate(inflater,container,false);
-        binding.recvHome.setAdapter(new HomeAdapter(getList(),getContext()));
+        binding.recvHome.setAdapter(homeAdapter);
         binding.recvHome.setLayoutManager(new LinearLayoutManager(getContext()));
-
-
-
-
-
-
 
         binding.btnWrite.setOnClickListener(v->{
             WriteDialog dialog = new WriteDialog(getContext());
@@ -56,5 +51,10 @@ public class HomeFragment extends Fragment {
         list.add(new HomeDTO(R.drawable.home_img7,5000,1,5,"오늘비움 팔아요","농성1동","1일 전",R.drawable.baseline_person_24,13,"하하맨"," "));
 
         return list;
+    }
+
+    public void addList(HomeDTO dto){
+        homeAdapter.list.add(dto);
+        homeAdapter.notifyDataSetChanged();
     }
 }

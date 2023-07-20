@@ -30,7 +30,7 @@ public class AroundRecv6Sub2Fragment extends Fragment {
 
     public ArrayList<AroundDTO6Rcv2> getList(){
         ArrayList<AroundDTO6Rcv2> list = new ArrayList<>();
-        list.add(new AroundDTO6Rcv2(R.drawable.dongne_img1,R.drawable.dongne_img1,R.drawable.dongne_img1,
+        list.add(new AroundDTO6Rcv2(R.drawable.around_img6_2_1,R.drawable.around_img6_2_2,R.drawable.around_img6_2_3,
                 "햇살처럼.","과일판매","만원의 행복 나주배","약 4시간전",
                 "초이다이닝 상무지구점","퓨전음식전문","초이다이닝 메뉴","12일전",
                 "달빛블루베리", "농산물", "연이은 장마로 일찍 종료 됬습니다.","16일전"));

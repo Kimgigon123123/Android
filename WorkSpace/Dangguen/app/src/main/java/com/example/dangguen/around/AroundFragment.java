@@ -186,36 +186,36 @@ public class AroundFragment extends Fragment {
 
     public ArrayList<AroundDTO2> getList2(){
         ArrayList<AroundDTO2> list = new ArrayList<>();
-        list.add(new AroundDTO2(R.drawable.chat_img1,R.drawable.chat_img1,"100세 건강연구","스포츠마을","무료 독서능력평가 쿠폰","2023.08.31까지"));
-        list.add(new AroundDTO2(R.drawable.chat_img1,R.drawable.chat_img1,"e헤어플러스","미용실","당근 후기 10% 할인","2024.01.03까지"));
-        list.add(new AroundDTO2(R.drawable.chat_img1,R.drawable.chat_img1,"신선축산 정육점","정육점","당근단골 파절이+소스증정","2023.08.31까지"));
+        list.add(new AroundDTO2(R.drawable.around_img2_1,R.drawable.chat_img1,"100세 건강연구","스포츠마을","무료 독서능력평가 쿠폰","2023.08.31까지"));
+        list.add(new AroundDTO2(R.drawable.around_img2_2,R.drawable.chat_img1,"e헤어플러스","미용실","당근 후기 10% 할인","2024.01.03까지"));
+        list.add(new AroundDTO2(R.drawable.around_img2_3,R.drawable.chat_img1,"신선축산 정육점","정육점","당근단골 파절이+소스증정","2023.08.31까지"));
 
         return list;
     }
 
     public ArrayList<AroundDTO3> getList3(){
         ArrayList<AroundDTO3> list = new ArrayList<>();
-        list.add(new AroundDTO3(R.drawable.chat_img1,450,223,"현대","제네시스 쿠페 BK 200 터보 P"));
-        list.add(new AroundDTO3(R.drawable.chat_img1,550,77,"현대","현대 i40 살룬 VF 17. VGT FWD D 스펙"));
-        list.add(new AroundDTO3(R.drawable.chat_img1,1300,114,"미니","미니 쿠퍼 D III F56/F55 5DR 1.5 d (116마력)"));
+        list.add(new AroundDTO3(R.drawable.around_img3_1,450,223,"현대","제네시스 쿠페 BK 200 터보 P"));
+        list.add(new AroundDTO3(R.drawable.around_img3_2,550,77,"현대","현대 i40 살룬 VF 17. VGT FWD D 스펙"));
+        list.add(new AroundDTO3(R.drawable.around_img3_3,1300,114,"미니","미니 쿠퍼 D III F56/F55 5DR 1.5 d (116마력)"));
 
         return list;
     }
 
     public ArrayList<AroundDTO5> getList5(){
         ArrayList<AroundDTO5> list = new ArrayList<>();
-        list.add(new AroundDTO5(R.drawable.chat_img1,400,45,"오피스텔","풍암호수공원부근","풍암동"));
-        list.add(new AroundDTO5(R.drawable.chat_img1,300,38,"오피스텔","미니스톱 앞 건물","쌍촌동"));
-        list.add(new AroundDTO5(R.drawable.chat_img1,200,21,"분리형 원룸","버스도보 2분 거리","화정동"));
+        list.add(new AroundDTO5(R.drawable.around_img5_1,400,45,"오피스텔","풍암호수공원부근","풍암동"));
+        list.add(new AroundDTO5(R.drawable.around_img5_2,300,38,"오피스텔","미니스톱 앞 건물","쌍촌동"));
+        list.add(new AroundDTO5(R.drawable.around_img5_3,200,21,"분리형 원룸","버스도보 2분 거리","화정동"));
 
         return list;
     }
 
     public ArrayList<AroundDTO8> getList8(){
         ArrayList<AroundDTO8> list = new ArrayList<>();
-        list.add(new AroundDTO8(R.drawable.dongne_img1,1699,70,"현대","현대 그랜저 IG 2.4 GDi FWD 프리미엄 스페셜"));
-        list.add(new AroundDTO8(R.drawable.dongne_img1,4400,130,"BMW","BMW X3 G01 20d xDrive xLine"));
-        list.add(new AroundDTO8(R.drawable.dongne_img1,1050,56,"미니","쿠퍼 D III F56/F55 5DR 1.5d (116마력)"));
+        list.add(new AroundDTO8(R.drawable.around_img8_1,1699,70,"현대","현대 그랜저 IG 2.4 GDi FWD 프리미엄 스페셜"));
+        list.add(new AroundDTO8(R.drawable.around_img8_2,4400,130,"BMW","BMW X3 G01 20d xDrive xLine"));
+        list.add(new AroundDTO8(R.drawable.around_img8_3,1050,56,"미니","쿠퍼 D III F56/F55 5DR 1.5d (116마력)"));
 
 
         return list;

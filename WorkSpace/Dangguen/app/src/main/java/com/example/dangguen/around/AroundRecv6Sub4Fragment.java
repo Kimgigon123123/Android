@@ -33,7 +33,7 @@ public class AroundRecv6Sub4Fragment extends Fragment {
 
     public ArrayList<AroundDTO6Rcv4> getList(){
         ArrayList<AroundDTO6Rcv4> list = new ArrayList<>();
-        list.add(new AroundDTO6Rcv4(R.drawable.dongne_img1,R.drawable.dongne_img1,R.drawable.dongne_img1,
+        list.add(new AroundDTO6Rcv4(R.drawable.around_img6_4_1,R.drawable.around_img6_4_2,R.drawable.around_img6_4_3,
                 "햇살언어성장연구소","기타","5~7세 사회성 그룹 모집","약 13시간전",
                 "영재사관학원","보습/교습/입시학원","영재학원 프리미엄반 모집","11일전",
                 "스페인어 과외!", "", "","16일전"));

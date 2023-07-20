@@ -35,9 +35,9 @@ public class AroundRecv7Sub3Fragment extends Fragment {
     public ArrayList<AroundDTO4Rcv1> getList() {
 
         ArrayList<AroundDTO4Rcv1> list = new ArrayList<>();
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,1300,30,"리메디필라테스 화정점","필라테스","3년이상 경력의 강사진들과 스탓필라테스 국제"));
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,1400,40,"몸이야필라테스화정점","필라테스","몸이야필라테스 화정점 몸이야 Open Event"));
-        list.add(new AroundDTO4Rcv1(R.drawable.dongne_img1,2400,50,"에스바디휘트니스","헬스","우리동네 최저가회비 초보자 체계적인 지도 냉난"));
+        list.add(new AroundDTO4Rcv1(R.drawable.around_img7_3_1,1300,30,"리메디필라테스 화정점","필라테스","3년이상 경력의 강사진들과 스탓필라테스 국제"));
+        list.add(new AroundDTO4Rcv1(R.drawable.around_img7_3_2,1400,40,"몸이야필라테스화정점","필라테스","몸이야필라테스 화정점 몸이야 Open Event"));
+        list.add(new AroundDTO4Rcv1(R.drawable.around_img7_3_3,2400,50,"에스바디휘트니스","헬스","우리동네 최저가회비 초보자 체계적인 지도 냉난"));
 
         return list;
     }

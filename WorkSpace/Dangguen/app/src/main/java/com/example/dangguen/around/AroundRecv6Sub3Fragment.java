@@ -31,7 +31,7 @@ public class AroundRecv6Sub3Fragment extends Fragment {
 
     public ArrayList<AroundDTO6Rcv3> getList(){
         ArrayList<AroundDTO6Rcv3> list = new ArrayList<>();
-        list.add(new AroundDTO6Rcv3(R.drawable.dongne_img1,R.drawable.dongne_img1,R.drawable.dongne_img1,
+        list.add(new AroundDTO6Rcv3(R.drawable.around_img6_3_1,R.drawable.around_img6_3_2,R.drawable.around_img6_3_3,
                 "굿모닝서울안과","안과","여름방학 라식라섹49%","약 21시간전",
                 "우리동네점핑 다이어트","기타실내운동시","이런 운동은 처음이시라면??","1일전",
                 "짐나빌레라", "헬스", "상무지구PT샵 짐나빌레라 신규등록 이벤트","9일전"));
